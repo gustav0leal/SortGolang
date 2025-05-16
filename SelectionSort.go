@@ -12,10 +12,8 @@ func selectionSort(arr []int) {
 			if arr[j] < arr[minIndex] {
 				minIndex = j
 			}
-			comparisons += 1
 		}
 		arr[i], arr[minIndex] = arr[minIndex], arr[i]
-		time.Sleep(delay * 10)
 	}
 }
 

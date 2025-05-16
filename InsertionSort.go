@@ -10,13 +10,10 @@ func insertionSort(arr []int) {
 		key := arr[i]
 		j := i - 1
 		for j >= 0 && arr[j] > key {
-			comparisons += 1
 			arr[j+1] = arr[j]
 			j--
-			time.Sleep(delay)
 		}
 		arr[j+1] = key
-		time.Sleep(delay * 10)
 	}
 }
 

@@ -8,7 +8,6 @@ func mergeSort(arr []int, l, r int) {
 	if l >= r {
 		return
 	}
-
 	m := (l + r) / 2
 	mergeSort(arr, l, m)
 	mergeSort(arr, m+1, r)
@@ -23,8 +22,6 @@ func merge(arr []int, l, m, r int) {
 	right := make([]int, n2)
 	copy(left, arr[l:m+1])
 	copy(right, arr[m+1:r+1])
-
-
 
 	i, j, k := 0, 0, l
 	for i < n1 || j < n2 {
